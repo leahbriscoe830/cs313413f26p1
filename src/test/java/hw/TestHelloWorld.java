@@ -41,12 +41,12 @@ public class TestHelloWorld {
   @Test
   public void getMessageInList() { // this test is broken - fix it!
     var list = Arrays.asList(fixture);
-    assertEquals("hello world", list.get(1).getMessage());
+    assertEquals("hello world", list.get(0).getMessage()); // changed 1 to 0 to fix out of bounds error for indexing list
   }
 
   @Test
   public void getYearInList() { // this test is broken - fix it!
     var list = Arrays.asList(fixture);
-    assertEquals(2026, list.get(1).getYear());
+    assertEquals(2026, list.get(0).getYear()); // changed 1 to 0 to fix out of bounds error for indexing list
   }
 }
